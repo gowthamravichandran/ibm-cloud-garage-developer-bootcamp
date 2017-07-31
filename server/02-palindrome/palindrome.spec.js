@@ -1,4 +1,4 @@
-describe.only('the palindrome canary spec', () => {
+describe('the palindrome canary spec', () => {
   it('shows the infrastructure works', () => {
       true.should.be.true();
     });
@@ -19,11 +19,11 @@ describe.only('the palindrome canary spec', () => {
     it('is not RACE CAR', () => {
       isPalindrome('RACE CAR').should.equal(false);
     });
-    it('', () => {
-      isPalindrome('RACE CAR').should.equal(false);
+    it('is not ""', () => {
+      isPalindrome('').should.equal(false);
     });
-    it('example1', () => {
-      isPalindrome('RACE CAR').should.equal(false);
+    it('is not  "   "', () => {
+      isPalindrome('   ').should.equal(false);
     });
   });
 });
